@@ -1,0 +1,19 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: shiro
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    data-password: password
+    data-username: root
+    url: jdbc:mysql://192.168.1.35:3306/shiro?useUnicode=true&characterEncoding=utf-8&useSSL=true
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
